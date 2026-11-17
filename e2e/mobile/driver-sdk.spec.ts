@@ -27,7 +27,7 @@ export default {
   output: "output",
   workers: 1, retries: 0, trace: "off", cache: "off", assertionTimeout: 1000,
   targets: [{name: "ios", engine: defineEngine({
-    name: "mobile", version: "0.10.0", spiVersion: 1, platform: "ios",
+    name: "mobile", version: "0.12.7", spiVersion: 1, platform: "ios",
     fixtures:{device:(context)=>context.fixture("device", {
       openApp:async()=>{throw new Error("expected process disconnect");},
       openLink:async()=>{},

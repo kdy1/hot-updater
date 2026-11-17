@@ -39,12 +39,12 @@ function reportFixture() {
       status: "passed",
       exitCode: 0,
       vcs: { commit: context.headSha },
-      runner: { name: "e2e", version: "0.18.0" },
+      runner: { name: "e2e", version: "0.23.1" },
       targets: [
         {
           id: "ios",
           platform: "ios",
-          engine: { name: "mobile", version: "0.10.0" },
+          engine: { name: "mobile", version: "0.12.7" },
         },
       ],
       serialGroups: [],
@@ -124,9 +124,9 @@ describe("mobile result contract", () => {
       cleanupStatus: "passed",
       errors: [],
       runnerVersions: {
-        e2e: "0.18.0",
-        mobile: "0.10.0",
-        agentDevice: "0.21.22",
+        e2e: "0.23.1",
+        mobile: "0.12.7",
+        agentDevice: "0.21.37",
       },
       scenarios: context.scenarioNames.map((name) => ({
         name,
