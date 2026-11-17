@@ -1,5 +1,13 @@
 # @hot-updater/bugsnag-plugin
 
+## 1.2.0-rc.50
+
+### Patch Changes
+
+- Updated dependencies [21cf534]
+  - @hot-updater/plugin-core@1.2.0-rc.50
+  - @hot-updater/protocol@1.2.0-rc.50
+
 ## 1.2.0-rc.49
 
 ### Patch Changes
