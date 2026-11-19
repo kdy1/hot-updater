@@ -1,7 +1,7 @@
 # Mobile E2E runner
 
-The runner uses `e2e@0.18.0`, `@e2e-dev/mobile@0.10.0`, and
-`agent-device@0.21.22` to execute the 35 scenarios in
+The runner uses `e2e@0.24.0`, `@e2e-dev/mobile@0.12.8`, and
+`agent-device@0.21.39` to execute the 35 scenarios in
 [`../scenario-names.json`](../scenario-names.json), or the 35 of the
 brownfield target in
 [`../brownfield-scenario-names.json`](../brownfield-scenario-names.json). The shared control server
@@ -109,7 +109,7 @@ their normal location, so runs still require exclusive devices and provider
 profiles. The local runner leases its prepared profile and refuses overlapping
 ownership.
 
-The daemon uses the internal launcher shipped with agent-device 0.21.22, matching
+The daemon uses the internal launcher shipped with agent-device 0.21.39, matching
 the entry used by that version's own SDK. This pinned compatibility contract is
 covered by a startup/health/shutdown test and must be revalidated when upgrading.
 Startup refuses legacy shared XCTestDevices symlinks/backups that upstream would

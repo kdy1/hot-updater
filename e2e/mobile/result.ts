@@ -5,9 +5,9 @@ import { isDeepStrictEqual } from "node:util";
 import type { MobileContext } from "./context.ts";
 
 export const RUNNER_VERSIONS = {
-  e2e: "0.18.0",
-  mobile: "0.10.0",
-  agentDevice: "0.21.22",
+  e2e: "0.24.0",
+  mobile: "0.12.8",
+  agentDevice: "0.21.39",
 } as const;
 
 export type CleanupStatus = "passed" | "failed" | "unknown";

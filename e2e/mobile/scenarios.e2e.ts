@@ -58,7 +58,7 @@ async function finishAttempt(attempt: HotUpdaterAttempt) {
 }
 
 const test = mobileTest.extend<{ hotUpdater: HotUpdaterAttempt }>({
-  hotUpdater: async (_fixtures, use) => {
+  hotUpdater: async ({}, use) => {
     // A timeout abandons the body; its next SDK step fails as CANCELLED, and
     // aborting here once it is torn down fences its control-plane calls.
     const controller = new AbortController();

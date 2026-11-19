@@ -7,7 +7,7 @@ import { createHotUpdaterReporter } from "./report.ts";
 
 const context = readMobileContext();
 
-export default {
+const config: E2EConfig = {
   projectId: "hot-updater-ota",
   tests: ["e2e/mobile/scenarios.e2e.ts"],
   workers: 1,
@@ -45,4 +45,6 @@ export default {
       },
     },
   ],
-} satisfies E2EConfig;
+};
+
+export default config;
